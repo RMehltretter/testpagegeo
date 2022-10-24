@@ -1,12 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
     
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" , initial-scale="1.0">
-    <title>Testseite Schmadara</title>   
-    <link href="https://rmehltretter.github.io/testpageagain/stylesheet.css" rel="stylesheet"/>
+    <title>My CMP v2 Testpage</title>    
     
     <!-- Usercentrics -->
     <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="O-NhwsNjh" async></script>
@@ -19,44 +17,28 @@
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
     
-    <!-- End Google Analytics -->
-    
-    <!-- Facebook Pixel Code -->
-    <script>
-     !function(f,b,e,v,n,t,s)
-     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-     if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-     n.queue=[];t=b.createElement(e);t.async=!0;
-     t.src=v;s=b.getElementsByTagName(e)[0];
-     s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-     fbq('init', '{your-pixel-id-goes-here}');
-     fbq('track', 'PageView');
+    ga('create', 'UA-183442640-1', 'auto');
+    ga('send', 'pageview');
     </script>
-    <noscript>
-    <img height="1" width="1" style="display:none" 
-       src="https://www.facebook.com/tr?id={your-pixel-id-goes-here}&ev=PageView&noscript=1"/>
-    </noscript>
-<!-- End Facebook Pixel Code -->
-    
+    <!-- End Google Analytics -->
+
+    <!-- Google Tag Manager -->
+    <script type ="text/plain" data-usercentrics="Google Tag Manager">(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MW6SFJV');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
-
-    
-    <script>
-  window.addEventListener("ucEvent", function (e) {    
-    if( e.detail && e.detail.event == "consent_status") {
-        if(e.detail['Facebook Pixel'] === true) { // check for consent status of service "Facebook Pixel"
-            console.log('Facebook Pixel has consent'); // add your script here
-        } else {
-            console.log('Facebook Pixel has no consent'); // add your script here
-        }
-      }
-    });
-</script>
-
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MW6SFJV" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <h1>Usercentrics CMP V2 Test Page</h1>
     <img src="https://1nf2x118nwr23j3l7o2i40qd-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/190208-UCS-Logo-800px.png" alt="uc-logo">
