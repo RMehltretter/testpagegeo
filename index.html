@@ -43,10 +43,20 @@
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MW6SFJV" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+
+    
+    <script>
+  window.addEventListener("ucEvent", function (e) {    
+    if( e.detail && e.detail.event == "consent_status") {
+        if(e.detail['Facebook Pixel'] === true) { // check for consent status of service "Facebook Pixel"
+            console.log('Facebook Pixel has consent'); // add your script here
+        } else {
+            console.log('Facebook Pixel has no consent'); // add your script here
+        }
+      }
+    });
+</script>
+
 
     <h1>Usercentrics CMP V2 Test Page</h1>
     <img src="https://1nf2x118nwr23j3l7o2i40qd-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/190208-UCS-Logo-800px.png" alt="uc-logo">
