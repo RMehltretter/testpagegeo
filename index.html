@@ -49,7 +49,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <script>
 function myFunction() {
-  UC_UI.showSecondLayer("S1_9Vsuj-Q").then(() => console.log('adjust consent')); 
+    UC_UI.acceptServices(["S1_9Vsuj-Q"]).then(() => console.log('Services are accepted'));
+
 
 }
 </script> 
