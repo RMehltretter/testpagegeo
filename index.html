@@ -44,17 +44,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  
 
 
-<button onclick="myFunction()">change labguage</button>
+<button onclick="myFunction()">change language</button>
 
-<p id="demo"></p>
+<p id="demo1"></p>
 
 <script>
 function myFunction() {
     UC_UI.updateLanguage("en").then(() => console.log('language cmp changed'));
+
+}
+</script> 
     
 <button onclick="myFunction()">accept</button>
 
-<p id="demo"></p>
+<p id="demo2"></p>
 
 <script>
 function myFunction() {
